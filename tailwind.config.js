@@ -1,16 +1,14 @@
-export default {
+module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       fontFamily: {
-				roboto: ["Roboto", "sans-serif"], // Add your Google Font here
-			},
-		},
+        roboto: ["Roboto", "sans-serif"], // Add your Google Font here
+      },
     },
   },
   daisyui: {
     themes: ["light", "dark", "cupcake"], // Add your preferred themes
   },
-  
   plugins: [require("daisyui")],
 };
